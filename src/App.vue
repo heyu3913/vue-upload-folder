@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <vue-gic-space
+    <vueUploadFolderHy
       id="dropzone"
       ref="myDropzone"
       :parentId="parentId"
@@ -9,18 +9,18 @@
       :useCustomSlot="true">
       <i class="el-icon-upload"></i>
       <div class="el-upload__text">将图片或者文件夹拖拽到此处上传，或者点击批量上传图片</div>
-    </vue-gic-space>
+    </vueUploadFolderHy>
   </div>
 </template>
 
 <script>
-import VueGicSpace from './components/vue-gic-space';
+import vueUploadFolderHy from 'vue-upload-folder-hy';
 
 export default {
   name: 'app',
 
   components: {
-    VueGicSpace
+    vueUploadFolderHy
   },
 
   data() {

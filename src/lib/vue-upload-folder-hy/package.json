@@ -1,0 +1,22 @@
+{
+  "name": "vue-upload-folder-hy",
+  "version": "1.0.1",
+  "description": "文件夹上传",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyu3913/vue-upload-folder.git"
+  },
+  "author": "https://github.com/heyu3913/vue-upload-folder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyu3913/vue-upload-folder/issues"
+  },
+  "homepage": "https://github.com/heyu3913/vue-upload-folder#readme"
+}

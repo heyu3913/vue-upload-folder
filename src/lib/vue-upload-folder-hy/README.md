@@ -22,33 +22,33 @@ Vue.use(VueUploadFolderHy);
 
 ```vue
     <vue-upload-folder-hy
-    id="dropzone"
-    ref="myDropzone"
-    :options="dropzoneOptions"
-    :action="folderUrl"
-    :parentId="parentId"
-    :useCustomSlot="true">
-  <i class="el-icon-upload"></i>
-  <div class="el-upload__text">将图片或文件夹拖到此处上传，或点击<b>上传</b>图片</div>
-  <div class="upload-tips">仅支持5M以内的jpg、png、gif格式的图片</div>
-</vue-upload-folder-hy>
-
+      id="dropzone"
+      ref="myDropzone"
+      :options="dropzoneOptions"
+      :action="folderUrl"
+      :parentId="parentId"
+      :useCustomSlot="true">
+      <i class="el-icon-upload"></i>
+      <div class="el-upload__text">将图片或文件夹拖到此处上传，或点击<b>上传</b>图片</div>
+      <div class="upload-tips">仅支持5M以内的jpg、png、gif格式的图片</div>
+    </vue-upload-folder-hy>
+    
 
 <script>
-  export default {
+export default {
 
-    data() {
-      return {
-        // 传给dropzone的配置项
-        dropzoneOptions: {
-          autoProcessQueue: false, // 不立即上传
-          url: 'xx', // 上传图片地址
-        },
-        parentId: 'xxx', // 如果你拖动文件夹里面还有图片 那要传一个id 
-        folderUrl: 'xx' // 创建文件夹的地址
-      };
-    }
-  };
+  data() {
+    return {
+      // 传给dropzone的配置项
+      dropzoneOptions: {
+        autoProcessQueue: false, // 不立即上传
+        url: 'xx', // 上传图片地址
+      },
+      parentId: 'xxx', // 如果你拖动文件夹里面还有图片 那要传一个id 
+      folderUrl: 'xx' // 创建文件夹的地址
+    };
+  }
+};
 </script>
 ```
 
@@ -97,8 +97,8 @@ Vue.use(VueUploadFolderHy);
 ```javascript
 
 methods: {
-    // 调用方法
-    this.$refs.myDropzone.xxxMethod();
+	// 调用方法
+	this.$refs.myDropzone.xxxMethod();
 }
 
 
